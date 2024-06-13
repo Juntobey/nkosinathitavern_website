@@ -1,0 +1,136 @@
+/* Basic Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#E8A724;
+  }
+  
+  img {
+   
+    object-fit: 45px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #283a28;
+  }
+  
+  .header .logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#EFE8DE;
+    column-gap: 0.5rem;
+}
+
+.header .logo img{
+    font-size: 10px;
+    display: block; 
+    object-fit: cover;
+    width: 100px;
+    height: auto;
+}
+  .nav-bar {
+    list-style: none;
+    display: flex;
+    column-gap: 0.5rem;
+  }
+  
+  .nav-bar li {
+    margin-left: 1rem;
+  }
+  
+  .nav-bar a {
+    padding: 0.5rem 1rem;
+    color: #EFE8DE;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .nav-bar a:hover {
+    background-color: #935F37;
+    border-radius: 5rem;
+    color:#EFE8DE;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  
+  /* Main Content Styles */
+  h2 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .event,
+  .cook-out {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .event h3,
+  .cook-out h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .event p,
+  .cook-out p {
+    line-height: 1.5;
+  }
+  
+  .event button{
+    border-radius: 5px; 
+    color:#935F37;
+  }
+   .cook-out .img{
+    width: 400px;  /* Adjust as needed */
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  /* Appreciation Cookout Styles */
+  #appreciation-date {
+    font-weight: bold;
+  }
+  .cook-out .img{
+    width: 400px;  /* Adjust as needed */
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  /* FontAwesome Icons (You might need to adjust classes based on Font Awesome version) */
+  .fa {
+    margin-right: 0.5rem;
+  }
+  
+  footer {
+    /*padding: 20px;*/
+    background-color: black;
+    color: #EFE8DE;
+    padding: 10px;
+  text-align: center;
+  }

@@ -1,0 +1,179 @@
+/* General Styling */
+body{
+  margin: 0;
+  padding:0;
+  background-color:#EFE8DE;
+}
+/* Header Styling */
+header{
+  position: fixed;
+  width: 100%;
+  top:0%;
+  right:0%;
+  left:0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+  background: #283a28;
+  box-shadow: 0 8px 11px rgb(14 55 54/ 15%);
+  padding: 1rem 7%;
+  transition: 0.5s;
+}
+
+.header .logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:#EFE8DE;
+  column-gap: 0.5rem;
+}
+
+.header .logo img{
+  font-size: 10px;
+  display: block; 
+  object-fit: cover;
+  width: 100px;
+  height: auto;
+}
+
+.nav-bar{
+  display: flex;
+  column-gap: 0.5rem;
+  list-style: none;
+}
+
+.nav-bar a:hover {
+  color: #e84545; /* Example hover color */
+}
+.nav-bar li{
+  margin-left: 1rem;
+}
+
+.nav-bar a{
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #EFE8DE;
+    padding: 0.5rem 1rem;
+}
+.content-wrapper {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;  
+  min-height: 100vh;  
+  padding-top: 100px; 
+  padding-bottom: 100px; 
+}
+
+/* Main Content Area */
+main {
+  padding: 2rem;
+}
+
+/* About Section Styling */
+.About {
+  display: flex; /* Arrange image and text side-by-side */
+  gap: 2rem; /* Add space between image and text */
+}
+
+ .About-text {
+  flex: 1; /* Allow text to take up available space */
+}
+
+.About-text h1 {
+  color: #e84545;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.About-text img { 
+    width: 250px;
+    height: 400px;
+    justify-content: center;
+   /* Style for images within the text */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.About-text p {
+  margin-bottom: 1.5rem;
+  color:black;
+  font-size: medium;
+}
+
+.About-text h4 {
+  color: black; /* Example color for subheadings */
+  margin-top: 2rem;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* About Section Styling */
+.About {
+  display: flex; /* Keep flexbox for layout */
+  flex-direction: column;  /* Stack image and text vertically on smaller screens */
+  align-items: center;    /* Center horizontally */
+  gap: 2rem; /* Add space between elements */
+}
+
+.About-text {
+  text-align: center; /* Center text within the container */
+  max-width: 800px;   /* Limit the width of the text container */
+}
+
+.About-text img {
+  width: 400px;  /* Adjust as needed */
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+/* Center images specifically within the About section */
+.About img {
+  display: block;  
+  margin: 0 auto;    
+}
+
+/* Right-align an image within the About section (example) */
+.About-text img[alt="The owner Letticia Ndhlovu"] {
+  float: right;      
+  margin-left: 1rem;  
+}
+
+/* Left-align an image within the About section (example) */
+.About-text img[alt="Our custemers posting"] {
+  float: left;      
+  margin-right: 1rem; 
+}
+
+/* Container for paragraphs */
+.container {
+  padding: 1rem;
+  border: 1px solid #E8A724; 
+  margin-bottom: 1rem;
+  border-radius: 5px; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 768px) { 
+  .About {
+      flex-direction: row;  
+  }
+}
+
+footer {
+  /*padding: 20px;*/
+  background-color: black;
+  color: #EFE8DE;
+  padding: 10px;
+text-align: center;
+}

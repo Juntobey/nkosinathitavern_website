@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nkosinathi Tavern - Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+</head>
+
+<body>
+  <header class ="header">
+    <div class = "logo">
+         <img src="wetransfer_lebo-project_2024-06-02_1726\LEBO PROJECT\PNG\NKOSINATHI LOGO-01.png"> 
+        <ul class = " nav-bar">
+            <li><a href ="Beverages.html">Beverages</a></li>
+            <li><a href = "AboutUs.html"> AboutUs</a></li>
+            <li><a href ="Events.html">Events</a></li>
+            <li><a href = "Contact.html"> ContactUs</a></li>
+            <li><a href = "cart.php">Cart</a></li>
+            <li><a href="Admin.php">Admin</a></li>
+            <li><a href="Register.php">Sign in</a></li>
+        </ul>
+        <div class ="icons">
+            <i class ="fas fa-bars" id ="bars"></i>
+            <i class ="fas fa-search" id ="search-icon"></i>
+            <a href ="#" class = "fas fa-heart"></a>
+            <a href ="#" class = "fas fa-shopping-cart"></a>
+        </div>
+        </div>
+</header>
+
+  <main>
+    <div class="container" id="container">
+      <section class="contact-us">
+        <h2>Contact Nkosinathi Tavern</h2>
+        <p>Get in touch! We're here to help. Fill out the form.</p>
+
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form action="submit_contact.php" method="post">
+              <label for="firstname">First name:</label>
+              <input type="text" id="firstname" name="firstname" required>
+
+              <label for="lastname">Last name:</label>
+              <input type="text" id="lastname" name="lastname" required>
+
+              <label for="email">Email address:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">Your message:</label>
+              <textarea id="message" name="message" rows="10" cols="30" required></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-phone"></i> +27796824995</p>
+            <p><i class="fas fa-envelope"></i> info@nkosinathiTavern.co.za</p>
+            <p><i class="fas fa-map-marker-alt"></i> Shushumela Graveyard extension 11 next ga Motodi, Greater Tubatse</p>
+          </div>
+        </div> 
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; NkosinathiTavern 2024</p>
+    <a href="contact.html">Contact Us</a>
+    <ul class="social-media">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+<script src="contact.js"></script> 
+</body>
+</html>
